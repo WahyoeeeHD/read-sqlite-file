@@ -2,7 +2,7 @@
 $db = new SQLite3('database.sqlite');
 
 // Ambil data dari tabel "users"
-$result = $db->query("SELECT * FROM users");
+$result = $db->query("SELECT * FROM sqlite_master where type='table'");
 
 echo "<h2>Data dari tabel 'users'</h2>";
 
